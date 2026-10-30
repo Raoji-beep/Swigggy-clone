@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+
+.hero {
+    width: 100%;
+    height: 650px;
+    background-color: #ff5200;
+    position: relative;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+    max-width: 980px;
+    height: 95px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.logo h2 {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: #ff5200;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.app-btn {
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 12px 15px;
+}
+
+.signin-btn {
+    background: black;
+    border-radius: 14px;
+    padding: 14px 35px;
+}
+
+/* SIDE IMAGES */
+
+.left-image,
+.right-image {
+    position: absolute;
+    width: 200px;
+    height: 360px;
+    object-fit: cover;
+    top: 95px;
+}
+
+.left-image {
+    left: -45px;
+    border-radius: 0 15px 15px 0;
+}
+
+.right-image {
+    right: -45px;
+    border-radius: 15px 0 0 15px;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+    text-align: center;
+    margin-top: 48px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 37px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+/* SEARCH BOX */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.location,
+.search {
+    background: white;
+    height: 51px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.location {
+    width: 245px;
+}
+
+.search {
+    width: 400px;
+}
+
+.location input,
+.search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    background: transparent;
+}
+
+.location span:first-child {
+    font-size: 18px;
+}
+
+.location span:last-child,
+.search span {
+    font-size: 22px;
+    color: #555;
+}
+
+/* SERVICE CARDS */
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    max-width: 980px;
+    margin: 48px auto 0;
+
+    position: relative;
+    z-index: 3;
+}
+
+.service-card {
+    width: 277px;
+    height: 251px;
+
+    background: white;
+    border-radius: 30px;
+
+    padding: 20px 20px;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.10);
+}
+
+.service-card h2 {
+    color: #454545;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.service-card p {
+    color: #999;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.offer {
+    display: inline-block;
+    color: #ff5200;
+    background: #fff4ed;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 20px;
+    margin-top: 8px;
+}
+
+.service-card img {
+    position: absolute;
+    width: 135px;
+    height: 130px;
+    object-fit: cover;
+
+    right: 0;
+    bottom: 0;
+
+    border-radius: 50% 0 25px 0;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 23px;
+    left: 22px;
+
+    height: 36px;
+    width: 36px;
+
+    background: #ff5200;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 26px;
+    font-weight: 500;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .services {
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .service-card {
+        width: 33.33%;
+    }
+
+    .left-image,
+    .right-image {
+        width: 130px;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .hero {
+        height: auto;
+        min-height: 850px;
+        padding-bottom: 35px;
+    }
+
+    .navbar {
+        height: 75px;
+        padding: 0 18px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav .signin-btn {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .left-image,
+    .right-image {
+        display: none;
+    }
+
+    .hero-content {
+        margin-top: 65px;
+        padding: 0 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location,
+    .search {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 380px;
+        height: 190px;
+    }
+
+    .service-card h2 {
+        font-size: 21px;
+    }
+
+    .service-card img {
+        width: 120px;
+        height: 110px;
+    }
+}
