@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-/* HERO SECTION */
+
 
 .hero {
     width: 100%;
@@ -20,7 +20,7 @@ body {
     overflow: hidden;
 }
 
-/* NAVBAR */
+
 
 .navbar {
     max-width: 980px;
@@ -87,7 +87,7 @@ nav a {
     padding: 14px 35px;
 }
 
-/* SIDE IMAGES */
+
 
 .left-image,
 .right-image {
@@ -108,7 +108,7 @@ nav a {
     border-radius: 15px 0 0 15px;
 }
 
-/* HERO CONTENT */
+
 
 .hero-content {
     text-align: center;
@@ -124,7 +124,7 @@ nav a {
     font-weight: 700;
 }
 
-/* SEARCH BOX */
+
 
 .search-box {
     display: flex;
@@ -171,7 +171,7 @@ nav a {
     color: #555;
 }
 
-/* SERVICE CARDS */
+
 
 .services {
     display: flex;
@@ -255,106 +255,3 @@ nav a {
     font-weight: 500;
 }
 
-/* TABLET RESPONSIVE */
-
-@media (max-width: 1000px) {
-
-    .navbar {
-        padding: 0 30px;
-    }
-
-    .services {
-        gap: 20px;
-        padding: 0 20px;
-    }
-
-    .service-card {
-        width: 33.33%;
-    }
-
-    .left-image,
-    .right-image {
-        width: 130px;
-    }
-}
-
-/* MOBILE RESPONSIVE */
-
-@media (max-width: 600px) {
-
-    .hero {
-        height: auto;
-        min-height: 850px;
-        padding-bottom: 35px;
-    }
-
-    .navbar {
-        height: 75px;
-        padding: 0 18px;
-    }
-
-    .logo h2 {
-        font-size: 20px;
-    }
-
-    nav {
-        gap: 10px;
-    }
-
-    nav a {
-        display: none;
-    }
-
-    nav .signin-btn {
-        display: block;
-        padding: 10px 20px;
-    }
-
-    .left-image,
-    .right-image {
-        display: none;
-    }
-
-    .hero-content {
-        margin-top: 65px;
-        padding: 0 15px;
-    }
-
-    .hero-content h1 {
-        font-size: 26px;
-    }
-
-    .search-box {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .location,
-    .search {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .services {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-        gap: 20px;
-        padding: 0 20px;
-    }
-
-    .service-card {
-        width: 100%;
-        max-width: 380px;
-        height: 190px;
-    }
-
-    .service-card h2 {
-        font-size: 21px;
-    }
-
-    .service-card img {
-        width: 120px;
-        height: 110px;
-    }
-}
